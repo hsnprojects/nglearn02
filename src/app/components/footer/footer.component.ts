@@ -7,5 +7,5 @@ import {formatDate} from '@angular/common';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  timestamp = formatDate(new Date(), 'y-MM-dd hh:mm:ss.s', 'en');
+  timestamp = formatDate(new Date(), 'y-MM-dd hh:mm:ss.SSS', 'en');
 } 

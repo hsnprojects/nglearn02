@@ -8,17 +8,26 @@ import { LeftnavComponent } from './components/leftnav/leftnav.component';
 import { RightnavComponent } from './components/rightnav/rightnav.component';
 import { MainBodyComponent } from './components/main-body/main-body.component';
 
+import { RouterModule } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     LeftnavComponent,
     RightnavComponent,
-    MainBodyComponent
+    MainBodyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+        {path: '', pathMatch: 'full', redirectTo: 'home'},
+        {path: 'home', component: AppComponent},
+        {path: 'login', component: LoginComponent}
+  ])
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,156 @@
+.row {
+    --bs-gutter-x: 0;
+    border: soild 1px gray;
+}
+
+.col {
+    border: soild 1px gray;
+}
+
+#pagecontents {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-color: rgb(230,230,230);
+}
+
+#leftnav-contents-rightnav {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+#leftnav-contents-rightnav .row {
+    flex: auto;
+}
+
+#mainrowxx {
+    flex: auto;
+}
+
+#leftnav {
+    display: flex !important;
+    flex-direction: column;
+    display: inline;
+    background-color: rgb(230,230,230);
+    padding: 10px;
+    min-width: 200px;
+}
+
+#leftnav .nav {
+    flex: auto;
+}
+
+#content {
+    background-color: rgb(240,240,240);
+    padding: 10px;
+}
+
+#rightnav {
+    flex: none;
+    background-color: rgb(230,230,230);
+    padding: 10px;
+    min-width: 200px;
+}
+
+#footer {
+    background-color: rgb(200,200,200);
+    padding: 10px;
+}
+
+#footer .container {
+    padding: 10px;
+}
+
+#footer-links a {
+    color: rgb(102, 102, 102);
+}
+
+#message {
+    background-color: rgb(245, 247, 235);
+    position: fixed;
+    bottom: 0px;
+    min-width: 100%;
+    padding: 3px;
+}
+
+#about{
+    background-color: rgb(245, 247, 235);
+    min-width: 100%;
+    padding: 3px;
+}
+
+#gotoTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.fadeIn {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fadeOut {
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* unused */
+
+.fadeInAndOut {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

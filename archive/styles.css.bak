@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+
+.row {
+    /* background: #f8f9fa; */
+    --bs-gutter-x: 0;
+    border: soild 3px red;
+}
+
+.col {
+    /* border: solid 1px #6c757d; */
+    border: soild 3px red;
+}
+
+#pagecontents {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-color: rgb(184, 181, 157);
+}
+
+#leftnav-contents-rightnav {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+#leftnav-contents-rightnav .row {
+    flex: auto;
+}
+
+#mainrowxx {
+    flex: auto;
+}
+
+#leftnav {
+    display: flex !important;
+    flex-direction: column;
+    display: inline;
+    background-color: #deded5;
+    padding: 10px;
+    min-width: 200px;
+}
+
+#leftnav .nav {
+    flex: auto;
+}
+
+#content {
+    background-color: rgb(236, 236, 230);
+    padding: 10px;
+}
+
+#rightnav {
+    flex: none;
+    background-color: #deded5;
+    padding: 10px;
+    min-width: 200px;
+
+}
+
+#footer {
+    background-color: #deded5;
+    padding: 10px;
+}
+
+#footer .container {
+    padding: 10px;
+}
+
+#footer-links a {
+    color: #818963;
+}
+
+#backtotop-and-message {
+    background-color: #bfc5ab;
+}
+
+#backtotop-and-message button {
+    background-color: #bfc5ab;
+}
+
+#toTopLink {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+}

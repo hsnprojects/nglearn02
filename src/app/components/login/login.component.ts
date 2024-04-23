@@ -9,11 +9,6 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
 
-  // ngOnInit(): void
-  // {
-    
-  // }
-
   loginForm!: FormGroup;
   loading = false;
   submitted = false;
@@ -26,9 +21,6 @@ export class LoginComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-
-    //throw new Error('Method not implemented.');
-
     this.loginForm = this.formBuilder.group({
       username: ["", Validators.required],
       password: ["", Validators.required],
@@ -39,7 +31,5 @@ export class LoginComponent implements OnInit {
   //   return this.loginForm.controls;
   // }
 
-  // onSubmit() {}
-
-  LOGIN = "login-form";
+  onSubmit() {}
 }

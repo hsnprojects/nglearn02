@@ -8,7 +8,6 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
   styleUrls: ["./login.component.css"],
 })
 export class LoginComponent implements OnInit {
-
   loginForm!: FormGroup;
   loading = false;
   submitted = false;
@@ -22,14 +21,27 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      username: ["", Validators.required],
-      password: ["", Validators.required],
+      username: ["", [Validators.required, Validators.minLength(3)]],
+      password: ["", [Validators.required, Validators.minLength(3)]],
     });
   }
 
-  // get f() {
-  //   return this.loginForm.controls;
-  // }
+  get f() {
+    return this.loginForm.controls;
+  }
 
-  onSubmit() {}
+  async onSubmit() {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.loginForm.invalid) {
+      return;
+    }
+
+    this.loading = true;
+
+    await new Promise((f) => setTimeout(f, 5000));
+    this.router.navigate(["/home"]);
+    this.loading = false; //will this get called?
+  }
 }

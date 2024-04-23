@@ -1,9 +1,7 @@
-<router-outlet></router-outlet>
-
 <div class="row">
     <div class="col-2"
          style="text-align: left;">
-         Future Dynamic Contents
+        Future Dynamic Contents
     </div>
 
     <a href="/home"
@@ -59,7 +57,18 @@
     <div class="row"
          id="mainrow">
         <app-leftnav style="display: contents"></app-leftnav>
-        <app-main-body style="display: contents"></app-main-body>
+
+        <!-- <app-main-body style="display: contents">
+            {{ dynamicBody }}
+        </app-main-body> -->
+
+        <div id="content"
+             class="col">
+
+            <router-outlet></router-outlet>
+
+        </div>
+
         <app-rightnav style="display: contents"></app-rightnav>
     </div>
 

@@ -1,11 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Router, ActivatedRoute } from "@angular/router";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 @Component({
-  selector: 'app-login.component',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: "app-login.component",
+  templateUrl: "./login.component.html",
+  styleUrls: ["./login.component.css"],
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+
+  // ngOnInit(): void
+  // {
+    
+  // }
+
+  loginForm!: FormGroup;
+  loading = false;
+  submitted = false;
+  error = "";
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
+
+  ngOnInit() {
+
+    //throw new Error('Method not implemented.');
+
+    this.loginForm = this.formBuilder.group({
+      username: ["", Validators.required],
+      password: ["", Validators.required],
+    });
+  }
+
+  // get f() {
+  //   return this.loginForm.controls;
+  // }
+
+  // onSubmit() {}
 
   LOGIN = "login-form";
 }

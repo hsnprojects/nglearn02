@@ -9,6 +9,9 @@ import { RightnavComponent } from "./components/rightnav/rightnav.component";
 import { MainBodyComponent } from "./components/main-body/main-body.component";
 
 import { LoginComponent } from "./components/login/login.component";
+import { HomeComponent } from './components/home/home.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,8 +21,9 @@ import { LoginComponent } from "./components/login/login.component";
     RightnavComponent,
     MainBodyComponent,
     LoginComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

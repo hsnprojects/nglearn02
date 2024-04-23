@@ -1,12 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app-root/app.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LeftnavComponent } from './components/leftnav/leftnav.component';
-import { RightnavComponent } from './components/rightnav/rightnav.component';
-import { MainBodyComponent } from './components/main-body/main-body.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.root/app.root.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { LeftnavComponent } from "./components/leftnav/leftnav.component";
+import { RightnavComponent } from "./components/rightnav/rightnav.component";
+import { MainBodyComponent } from "./components/main-body/main-body.component";
+
+import { LoginComponent } from "./components/login/login.component";
+import { HomeComponent } from './components/home/home.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,14 +19,12 @@ import { MainBodyComponent } from './components/main-body/main-body.component';
     FooterComponent,
     LeftnavComponent,
     RightnavComponent,
-    MainBodyComponent
+    MainBodyComponent,
+    LoginComponent,
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

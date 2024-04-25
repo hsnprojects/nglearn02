@@ -12,6 +12,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { PublicComponent } from './components/public/public.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainBodyComponent,
     LoginComponent,
     PublicComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -9,7 +9,7 @@ import { RightnavComponent } from "./components/rightnav/rightnav.component";
 import { MainBodyComponent } from "./components/main-body/main-body.component";
 
 import { LoginComponent } from "./components/login/login.component";
-import { HomeComponent } from './components/home/home.component';
+import { PublicComponent } from './components/public/public.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RightnavComponent,
     MainBodyComponent,
     LoginComponent,
-    HomeComponent,
+    PublicComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],

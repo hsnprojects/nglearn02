@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
     this.loading = true;
 
     await new Promise((f) => setTimeout(f, 5000));
-    this.router.navigate(["/home"]);
+    this.router.navigate(["/public"]);
     this.loading = false; //will this get called?
   }
 }

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './public.component.html',
+  styleUrls: ['./public.component.css']
 })
-export class HomeComponent {
+export class PublicComponent {
   severalLines: number[] = [];
 
   public constructor() {

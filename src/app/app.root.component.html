@@ -56,20 +56,35 @@
 
     <div class="row"
          id="mainrow">
-        <app-leftnav style="display: contents"></app-leftnav>
 
-        <!-- <app-main-body style="display: contents">
-            {{ dynamicBody }}
-        </app-main-body> -->
+        <div id="leftnavcontents"
+             style="display: contents;">
+
+            <app-leftnav style="display: contents">
+
+            </app-leftnav>
+
+        </div>
+
+        <!-- <app-main-body style="display: contents">{{ dynamicBody }}</app-main-body> -->
 
         <div id="content"
              class="col">
 
-            <router-outlet></router-outlet>
+            <router-outlet>
+
+            </router-outlet>
 
         </div>
 
-        <app-rightnav style="display: contents"></app-rightnav>
+        <div id="rightnavcontents"
+             style="display: contents;">
+
+            <app-rightnav style="display: contents">
+                
+            </app-rightnav>
+
+        </div>
     </div>
 
 </div>

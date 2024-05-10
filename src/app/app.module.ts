@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.root/app.root.component";
+import { AppComponent } from "./app.root.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LeftnavComponent } from "./components/leftnav/leftnav.component";
 import { RightnavComponent } from "./components/rightnav/rightnav.component";
